@@ -1,7 +1,7 @@
 version: "3.9"
 services:
  useritem-api-service:
-  image: wobr53/apiDev-example-DB
+  image: wobr53/apidev-example-db
   ports:
     - "8000:8000"
   volumes:
