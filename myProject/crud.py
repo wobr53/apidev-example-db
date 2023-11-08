@@ -36,3 +36,8 @@ def create_item(db: Session, item: schemas.ItemCreate, user_id: int):
     db.commit()
     db.refresh(db_item)
     return db_item
+
+
+def delete_all(db: Session):
+    db.query(models.Item).delete()
+    db.query(models.User).delete()
